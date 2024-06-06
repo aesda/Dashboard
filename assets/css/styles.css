@@ -1,0 +1,190 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+:root {
+    --primary-font: "Poppins", sans-serif;
+    --body-bg: #f3f3f9;
+    --body-text-color: rgb(33, 37, 41);
+    --primary-color: rgb(64, 81, 137);
+    --gray-text: rgb(135, 138, 153);
+    --box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+    
+}
+body {
+    background-color: var(--body-bg);
+    font-family: var(--primary-font);
+    color: var(--body-text-color);
+    font-size: 13px;
+
+}
+a {
+    color: var(--primary-font);
+
+}
+    
+/*start auth common*/
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.form-item label {
+    font-weight: 500;
+    
+    
+}
+.form-item label span {
+    color: red;
+
+}
+.form-item input[type="email"],
+.form-item input[type="password"],
+.form-item input[type="text"] {
+    border: rgb(180, 186, 208);
+    padding: 8px 14px;
+    border-radius: 4px;
+    line-height: 19px;
+    font-family: var(--primary-font);
+    
+
+
+
+}
+
+::placeholder {
+    color: var(--gray-text);
+}
+.primary-btn {
+    background-color: rgb(10, 179, 156);
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 14px;
+    line-height: 19px;
+    border: 1px solid rgb(10, 179, 156);
+    transition-duration: 300ms;
+    transition-property: all;
+
+
+}
+.primary-btn:hover {
+    background-color: #099885;
+    cursor: pointer;
+
+}
+
+
+ 
+
+.auth-bg {
+    background-image: url('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fthemesbrand.com%2Fvelzon%2Fhtml%2Fmaster%2Fassets%2Fimages%2Fauth-one-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+}
+.auth-overlay {
+    background-image: linear-gradient(to right, #364574, #405189);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+.shape {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    position: absolute;
+}
+
+.shape > svg {
+    fill: var(--body-bg);
+    width: 100%;
+    display: block;
+}
+.auth-outer-wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    padding-top: 48px;
+}
+.auth-inner-wrapper {
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    padding-top: 48px;
+
+
+}
+.auth-inner-wrapper img {
+    height: 20px;
+    width: auto;
+}
+.auth-inner-wrapper h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray-text);
+    margin-top: 16px 0;
+}
+.auth-footer p {
+    font-size: 13px;
+    margin: 10px 0;
+
+}
+.auth-footer p:last-child {
+    color: var(--gray-text);
+}
+.auth-box {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 24px;
+    box-shadow: var(--box-shadow);
+    margin-top: 48px;
+
+}
+.auth-box h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+
+}
+.auth-box .intro {
+    color: rgb(135, 138, 153);
+    margin-bottom: 16px;
+}
+.auth-box form {
+    margin-top: 24px;
+    text-align: left;
+    
+}
+.auth-box p {
+    color: var(--gray-text);
+    margin: 10px 0;
+
+}
+.auth-box p em {
+    font-style: italic;
+}
+.auth-box button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 24px;
+}
+
+
+/*end auth common*/
+
+/*start sign up*/
+
+/*end sign up*/
+
