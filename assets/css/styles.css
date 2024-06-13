@@ -19,7 +19,25 @@ body {
 }
 a {
     color: var(--primary-font);
+    text-decoration: underline;
+    line-height: 1.5;
 
+}
+.avatar-xl {
+    width: 7.5rem;
+    height: 7.5rem;
+
+
+}
+.info {
+    color: rgb(210, 156, 64);
+    background-color: rgb(254, 244, 228);
+    padding: 12px 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+.form-item p .form-para {
+    margin: 0;
 }
     
 /*start auth common*/
@@ -31,17 +49,37 @@ a {
 }
 .form-item label {
     font-weight: 500;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+
     
     
 }
+.form-item div {
+    display: flex;
+    justify-content: space-between;
+
+}
+.form-item label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
 .form-item label span {
     color: red;
+
+}
+
+
+.form-item a {
+    color: var(--gray-text);
+    text-decoration: none;
 
 }
 .form-item input[type="email"],
 .form-item input[type="password"],
 .form-item input[type="text"] {
-    border: rgb(180, 186, 208);
+    border: 1px solid rgb(180, 186, 208);
     padding: 8px 14px;
     border-radius: 4px;
     line-height: 19px;
@@ -160,17 +198,19 @@ a {
 .auth-box .intro {
     color: rgb(135, 138, 153);
     margin-bottom: 16px;
+    line-height: 1.6;
 }
 .auth-box form {
     margin-top: 24px;
     text-align: left;
     
 }
-.auth-box p {
+.auth-box form p {
     color: var(--gray-text);
     margin: 10px 0;
 
 }
+
 .auth-box p em {
     font-style: italic;
 }
@@ -182,9 +222,90 @@ a {
 }
 
 
+
 /*end auth common*/
 
-/*start sign up*/
+/*start dashboard*/
+aside {
+    width: 250px;
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0px 20px;
+    box-sizing: border-box;
 
-/*end sign up*/
+}
+aside h1 {
+    text-align: center;
+    line-height: 70px;
+    position: sticky;
+
+}
+aside h1 img {
+    height: 17px;
+    width: auto;
+
+}
+aside nav .nav-title {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: rgb(131, 143, 185);
+    text-transform: uppercase;
+    padding: 12px 0;
+
+    
+}
+aside nav a {
+    
+    color: rgb(171, 185, 232);
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+
+
+}
+aside nav a  span {
+    flex-grow: 2;
+}
+aside nav a i {
+    margin-right: 10px;
+    font-size: 18px;
+
+}
+aside nav a i.ri-arrow-down-s-line {
+    display: none;
+
+}
+aside nav a i:last-child {
+    margin-right: 0;
+}
+aside nav a a.active,
+aside nav a a:hover 
+{
+    color: #fff;
+
+}
+aside nav a a.active i.ri-arrow-down-s-line {
+    display: block;
+
+}
+aside nav a a.active i.ri-arrow-right-s-line {
+    display: none;
+}
+aside nav ul ul a {
+    font-size: 13px;
+    padding: 8px 4px;
+    line-height: 1.2;
+}
+
+
+/*end dashboard*/
 
